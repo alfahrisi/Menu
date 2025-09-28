@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Salman Alfahrisi</a>
+        <div class="righSide">
+            <div class="btns dayNight">
+                <ion-icon name="moon-outline"></ion-icon>
+                <ion-icon name="sunny-outline"></ion-icon>
+            </div>
+            <div class="btns menuToggle">
+                <ion-icon name="grid-outline"></ion-icon>
+                <ion-icon name="close-circle-outline"></ion-icon>
+            </div>
+        </div>
+    </header>
+    <section class="main">
+        <img src="contact.jpg" class="web">
+        <img src="mask.jpg" class="mask">
+        <ul class="sci">
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="call-outline"></ion-icon></a></li>
+        </ul>
+    </section>
+
+<!--service-->
+<section class="service">
+    <div class="container">
+        <h3>CONTACT INFO</h3>
+        <div class="box">
+            <div class="col-4">
+                <h4>Address</h4>
+                <p>Komp. Bpp. Sankyu. Pelamunan. Serang. Banten 42161</p>
+            </div>
+            <div class="col-4">
+                <h4>Email</h4>
+                <p>salmanalfahrisi123@gmail.com</p>
+            </div>
+            <div class="col-4">
+                <h4>Instagram.</h4>
+                <p>salmanalfhrsi</p>
+            </div>
+            <div class="col-4">
+                <h4>HP</h4>
+                <p>089502545445</p>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5610.776683383428!2d106.11282026090703!3d-6.074202287902898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e418c819493a135%3A0x59c01002df2191de!2sALEVIBRA%20CELL!5e0!3m2!1sid!2sid!4v1663004628247!5m2!1sid!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</section>
+
+    <!-- Sidebar Navigation -->
+    <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="servise.html">Servise</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    
+    <!--footer-->
+    <footer>
+        <div class="container">
+            <small>Copyright &copy;2022 - SALMAN. All Rights Reserved.</small>
+        </div>
+    </footer>
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        let dayNight = document.querySelector('.dayNight')
+        let menuToggle = document.querySelector('.menuToggle')
+        let body = document.querySelector('body')
+        let navigation = document.querySelector('.navigation')
+
+        dayNight.onclick = function(){
+            body.classList.toggle('dark')
+            dayNight.classList.toggle('active')
+        }
+
+        menuToggle.onclick = function(){
+            menuToggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
